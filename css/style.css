@@ -344,3 +344,41 @@ section {
 .mapInfo input, .mapInfo textarea {
     font-size: 18px;
 }
+
+.footer {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #262626;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.footer a {
+    color: white;
+    text-decoration:underline;
+}
+
+#rules .modal-dialog {
+    color: black;
+    font-size: 16px;
+    width: 70%;
+    
+}
+
+#rules .modal-content {
+    padding-left: 20px;    
+    padding-right: 25px;    
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+#close {
+    float: right;
+    font-size: 16px;
+    
+}
+
+
+
