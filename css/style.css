@@ -1,9 +1,30 @@
 * {max-width: 3900px;}
 
+body {
+    font-size: 16px;
+}
+
+h2 {
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
 .no-padding {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+section {
+    border-bottom: 1px solid lightgray;
+}
+
+.join {
+    background: #f4de64;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
 
 /*Первый Блок*/
 .intro-header {
@@ -17,6 +38,15 @@
   padding-bottom: 120px;
 }
 
+.main_info h2 {
+    margin-bottom: 30px;
+}
+
+.main_info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    
+}
 .callInfo p {
   text-align: center;
   float: right;
@@ -59,15 +89,20 @@
     text-align: center;
 }
 
-.join {
-    background: #f4de64;
-    border-radius: 8px;
+.inviteText input {
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
+.inviteText button {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /*Второй Блок*/
 .about_us {
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -75,10 +110,9 @@
 /*Третий Блок*/
 .manufacturers {
 
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
   padding-bottom: 90px;
-  border-bottom: 1px solid lightgray;
 }
 
 .manufacturers p {
@@ -100,7 +134,7 @@
 }
 
 .carousel-indicators {
-  bottom:-70px;
+  bottom:-40px;
 }
 
 /*Четвертый блок*/
@@ -108,18 +142,16 @@
   margin-top: 30px;
   text-align: center;
   padding-bottom: 50px;
-  border-bottom: 1px solid lightgray;
 }
 
 .our_approach h2 {
-  font-size: 20px;
   padding-bottom: 20px;
 }
 
 .our_approach p {
   font-size: 16px;
   margin: 10px;
-
+  text-align: left;
 }
 
 .our_approach img {
@@ -128,9 +160,15 @@
     height: 200px;
 }
 
+@media screen and (max-width: 480px) {
+    .our_approach p {
+      text-align: center;
+    }
+}
+
 /*Пятый блок*/
 .test_block {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
   background: url("../img/imgTest.jpeg") no-repeat center center;
   background-size: cover;
@@ -150,7 +188,7 @@
 
 .modal-body {
   text-align: left;
-    margin-bottom: 45px;  
+  margin-bottom: 45px;  
 }
 
 #t_city, #t_phone, #t_mail, #t_name {
@@ -177,19 +215,8 @@
 /*Шестой блок*/
 .question {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid lightgray;
-}
-
-.question li {
-  text-align: left;
-  font-size: 20px;
-}
-
-.question span {
-  font-size: 16px;
-  font-style: italic;
 }
 
 #ask_quest {
@@ -200,14 +227,45 @@
   width: 250px;;
 }
 
-#q_form {
+#q_form, #g_form {
     margin: 20px;
 }
 
-#q_form input, textarea {
+#q_form input, textarea, #g_form input {
     width: 100%;
     padding: 5px;
     margin: 5px;
+}
+
+.dropquest {
+    
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.d_one, .d_two, .d_three, .d_four, .d_five {
+    margin: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc; 
+}
+
+.d_one:hover, .d_two:hover, .d_three:hover, .d_four:hover, .d_five:hover {
+    cursor: pointer;
+}
+
+#d_one, #d_two, #d_three, #d_four, #d_five {
+    
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+    
 }
 
 /*Седьмой блок*/
@@ -215,13 +273,16 @@
   /*background: Фотография из салона,
    на которой изображен руководитель
    компании*/
-  padding-top: 30px;
+  margin-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid lightgray;
 }
 
 .our_team h2, h4 {
   text-align: center;
+}
+
+.our_team h2 {
+    margin-bottom: 50px; 
 }
 
 .our_team p {
@@ -233,9 +294,8 @@
 }
 
 .teams {
-  padding-top: 30px;
+  margin-top: 50px;
   padding-bottom: 100px;
-  border-bottom: 1px solid lightgray;
   text-align: center;
   font-size: 18px;
 }
@@ -247,13 +307,20 @@
   margin: 20px;
 }
 
+.teams span {
+    font-weight: 600;
+    font-size: 22px;
+}
+
 /*Восьмой блок*/
 .map {
-  background: url("../img/end.jpg") no-repeat center center fixed;
   background-size: 100% auto;
-  padding-top: 30px;
-  padding-bottom: 150px;
-  border-bottom: 1px solid lightgray;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.map h2 {
+    margin-bottom: 10px;
 }
 
 .mapInfo {
@@ -263,14 +330,17 @@
   padding: 50px;
   border: 3px solid black;
   background-color: #ffffff;
-  opacity:0.8;
 }
 
-.mapInfo button {
+#bt_map {
 
   font-size: 20px;
   padding: 15px;
   text-align: center;
   color: black;
   width: 80%;
+}
+
+.mapInfo input, .mapInfo textarea {
+    font-size: 18px;
 }

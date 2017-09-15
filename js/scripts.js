@@ -1,5 +1,8 @@
 $("document").ready(function() {
     
+    
+    $(".phone").mask("0(000)-000-00-00");
+    
     $("#inv_form").submit(function() {
 
       $("#sub_inv").html("Отправляем...");
@@ -11,19 +14,13 @@ $("document").ready(function() {
            data: {name : $("#inv_name").val(), phone : $("#inv_phone").val()},
            success: function(){
                 alert('Спасибо за заявку! Мы скоро с вами свяжемся.');
-                $("#inviteBox").addClass("hidden");
-                $("#bt_neff").addClass("hidden");
-                $("#bt_elica").addClass("hidden");
-                $("#bt_libh").addClass("hidden");
-                $("#bt_miele").addClass("hidden");
-                $("#bt_bosch").addClass("hidden");
-                $("#bt_smeg").addClass("hidden");
-                $("#bt_map").addClass("hidden");
+                $("#inviteBox").html("Заявка успешно отправлена.");
 
             },
             error: function(){
                 alert('Произошла ошибка! Повторите попытку или свяжитесь с нами. \n8 (3452) 57-91-50');
                 $("input[type=text]").val("");
+                $("input[type=tel]").val("");
                 $("#sub_inv").removeAttr('disabled');
                 $("#sub_inv").html("Записаться");
 
@@ -146,6 +143,34 @@ $("document").ready(function() {
             }
        });
         $("#q_text").val("");
+        return false;
+    });
+    
+    $("#g_form").submit(function() {
+
+      $("#g_sub").html("Отправляем...");
+      $("#g_sub").attr('disabled',true);
+
+       $.ajax({
+           type: "POST",
+           url: "php/modal.php",
+           data: {g_name : $("#g_name").val(), 
+                  g_phone : $("#g_phone").val(),
+                  g_text : $("#g_text").val()
+                },
+                    
+           success: function(){
+                alert('Спасибо за заявку! Мы скоро с вами свяжемся.');
+                $("#getCall").modal("hide");;
+            },
+            error: function(){
+                alert('Произошла ошибка! Повторите попытку или свяжитесь с нами. \n8 (3452) 57-91-50');
+                $("#g_sub").removeAttr('disabled');
+                $("#g_sub").html("Отправить заявку");
+                $("#getCall").modal("hide");;
+            }
+       });
+        $("#g_text").val("");
         return false;
     });
     
