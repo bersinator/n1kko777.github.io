@@ -3003,6 +3003,7 @@ select[multiple].input-lg {
 .btn {
   display: inline-block;
   padding: 6px 12px;
+  color: #222;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
