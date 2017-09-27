@@ -591,12 +591,12 @@ jQuery(document).ready(function($) {
             case 4:
 
             break;
-            case 6:
+            case 7:
                 var data = $('.tech_anket form').serialize();
                 $.ajax({
                     method: "POST",
                     url: ajaxtechAnketUrl,
-                    data: data + '&screen=6',
+                    data: data + '&screen=7',
                     success: function(data) {
 
                     }
