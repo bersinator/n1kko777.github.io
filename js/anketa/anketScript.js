@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
             (s.opacity -= step) < 0 ? s.display = "none" : setTimeout(fade, 25);
         })();
     }
-
+    
     $('#tech_anket .anket-container .screen').eq(1).find('.screen-content').addClass('owl-carousel').owlCarousel({
                 responsiveClass: true,
                 nav: true,
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
                 }
 
             });
-    $('#tech_anket .anket-container .screen').eq(1).find('.screen-content').addClass('owl-hidden');
+    $('#tech_anket .anket-container .screen').eq(1).find('.screen-content').addClass('owl-hidden-by-client');
 
     $('#tech_anket .anket-container .screen').eq(2).find('.screen-content').addClass('owl-carousel').owlCarousel({
                 responsiveClass: true,
@@ -526,16 +526,15 @@ jQuery(document).ready(function($) {
     function AnketDopAction(screen) {
         switch (screen) {
             case 1:
-                $('#tech_anket .anket-container .screen').eq(1).find('.screen-content').addClass('owl-carousel').removeClass('owl-hidden');
+                $('#tech_anket .anket-container .screen').eq(1).find('.screen-content').removeClass('owl-hidden-by-client');
+
+
             break;
             case 2:
-                $('#tech_anket .anket-container .screen').eq(2).find('.screen-content').addClass('owl-carousel').removeClass('owl-hidden');
             break;
             case 3:
-                $('#tech_anket .anket-container .screen').eq(3).find('.screen-content').addClass('owl-carousel').removeClass('owl-hidden');
             break;
             case 4:
-
             break;
             case 7:
                 var data = $('.tech_anket form').serialize();
