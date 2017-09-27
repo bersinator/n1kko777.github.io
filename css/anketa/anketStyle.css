@@ -32,7 +32,7 @@
     display: none;
     height: 100%;
     width: 100%;
-    min-height: 300px;
+    height: 300px;
     max-width: 880px;
     margin: 0 auto 0 auto;
 }
@@ -310,6 +310,9 @@
 .welcomeScreenHead {
     margin-bottom: 10px;
     padding-top: 20px
+}
+.owl-hidden-by-client {
+    opacity: 0;
 }
 
 /*** additional responsive css start ***/
