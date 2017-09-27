@@ -11,6 +11,7 @@ $renderer   = array(
 				'phone'         => 'Контактный телефон',
 				'email'         => 'Электронная почта',
 			);
+
 $result=array();
 
 if(isset($_POST['screen']) && intval($_POST['screen']))
@@ -21,15 +22,19 @@ if(isset($_POST['screen']) && intval($_POST['screen']))
 			unset($_POST['screen']);
 
 			$body='Добрый день!<br />';
-			$body.='Cообщаем вам, что на сайте '.$siteName.' пользователь заполнил анкету и оставил следующие данные:<br /><br />';
+			$body.='Cообщаем вам, что на сайте <strong>'.$siteName.'</strong> пользователь заполнил анкету и оставил следующие данные:<br /><br />';
 
 			foreach($_POST as $k => $v) {
-					$body.='<b>'.$keys[$k].'</b>: '.$v.'<br />';
+					$body.='<b>'.$renderer[$k].'</b>: '.$v.'<br />';
 				}
 
 			$body.='<br /><br />';
 
-			$headers = 'From: osxmagic <info@osxmagic.com>' . "\r\n";
+			$headers = "From:  osxmagic <info@osxmagic.com> \r\n";
+			$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
+			$headers .= "CC:' . $adminEmail . '\r\n";
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-Type: text/html;\r\n";
 
 			if(mail($adminEmail, $subject, $body, $headers)) {
 				$result = 1;
@@ -40,7 +45,7 @@ if(isset($_POST['screen']) && intval($_POST['screen']))
 		break;
 		}
 	}
-	
+
 header("Content-Type: application/json;");
 echo json_encode($result);
 ?>
