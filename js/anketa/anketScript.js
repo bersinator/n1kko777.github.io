@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
                 $(this).removeClass('long').html('Далее');
                 $('#tech_anket .buttons a.prev').removeClass('not-visible');
             }
-            if(active_index==7)
+            if(active_index==6)
             {
             	$('#tech_anket .buttons a').addClass('not-visible');
             }
@@ -552,13 +552,13 @@ jQuery(document).ready(function($) {
                 error = 'Выберите ';
                 break;
             case 5:
-                error = 'Укажите размеры ';
-                break;
-            case 6:
                 error = 'Введите ваше имя';
                 break;
+            case 6:
+                error = 'Введите ваш номер телефона и электронную почту';
+                break;
             case 7:
-                error = 'Введите ваш номер телефона';
+                error = ' ';
                 break;
         }
         if (error) {
