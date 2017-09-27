@@ -341,115 +341,213 @@
         </div>
     </section>
 
+
     <!-- Пятый блок -->
     <section class="test_block">
         <div class="container">
-            <h4>Впервые выбираете технику?</h4>
-            <h2>Хотите узнать стоимость комплекта бытовой техники для Вашего дома?
-            </h2>
-            <p>Пройди тест из 5 вопросов и получи индивидуальный<br> подбор техники на электронную почту!</p>
-
-            <button id="entry_test" class="push_button new-btn" type="button" data-toggle="modal" data-target="#myTest">
-               Пройти тест
-             </button>
-
-            <div class="modal fade" id="myTest" tabindex="-1" role="dialog" aria-labelledby="mymodallabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-
-                        <div class="modal-body">
-
-                            <buttom class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">
-                           &times;</span></buttom>
-
-                            <div class="quest">
-
-                                <div>
-                                    <h4 id="what">Какую технику Вы выбираете?</h4>
-                                    <input type="checkbox" class="get_what" value="Духовой шкаф"> Духовой шкаф
-                                    <br>
-                                    <input type="checkbox" class="get_what" value="СВЧ-печь"> СВЧ-печь
-                                    <br>
-                                    <input type="checkbox" class="get_what" value="Варочная поверхность"> Варочная поверхность
-                                    <br>
-                                    <input type="checkbox" class="get_what" value="Посудомоечная машина"> Посудомоечная машина
-                                    <br>
-                                    <input type="checkbox" class="get_what" value="Вытяжка"> Вытяжка
-                                    <br>
-                                    <input type="checkbox" class="get_what" value="Стиральная машина"> Стиральная машина
-                                    <br>
-                                    <input type="checkbox" class="get_what" value="Сушильный автомат"> Сушильный автомат
-                                    <br> </div>
-
-                                <div>
-                                    <h4 id="color">Какой цвет техники Вас интересует?</h4>
-                                    <input type="checkbox" class="get_color" value="Черное стекло"> Черное стекло
-                                    <br>
-                                    <input type="checkbox" class="get_color" value="Черное стекло с нержавеющей сталью"> Черное стекло с нержавеющей сталью
-                                    <br>
-                                    <input type="checkbox" class="get_color" value="Белое стекло"> Белое стекло
-                                    <br>
-                                    <input type="checkbox" class="get_color" value="Кремовый"> Кремовый
-                                    <br>
-                                    <input type="checkbox" class="get_color" value="Антрацит"> Антрацит
-                                    <br>
-                                    <input type="checkbox" class="get_color" value="Не имеет значения"> Не имеет значения
-                                    <br>
-                                </div>
-
-                                <div>
-                                    <h4 id="which">Техника каких брендов Вас интересует?</h4>
-                                    <input type="checkbox" class="get_which" value="Miele"> Miele
-                                    <br>
-                                    <input type="checkbox" class="get_which" value="Bosch"> Bosch
-                                    <br>
-                                    <input type="checkbox" class="get_which" value="Siemens"> Siemens
-                                    <br>
-                                    <input type="checkbox" class="get_which" value="Neff"> Neff
-                                    <br>
-                                    <input type="checkbox" class="get_which" value="Leibherr"> Leibherr
-                                    <br>
-                                    <input type="checkbox" class="get_which" value="Elica"> Elica
-                                    <br>
-                                    <input type="checkbox" class="get_which" value="Smeg"> Smeg
-                                    <br>
-                                </div>
-
-                                <div>
-                                    <h4 id="as_soon">Как скоро Вам нужна техника?</h4>
-                                    <input type="radio" class="as_soon" name="as_soon" value="Срочно" checked> Срочно
-                                    <br>
-                                    <input type="radio" class="as_soon" name="as_soon" value="Через две недели"> Через две недели
-                                    <br>
-                                    <input type="radio" class="as_soon" name="as_soon" value="Через месяц">Через месяц
-                                    <br>
-                                </div>
-
-                                <div>
-                                    <h4 id="info">Небольшая информация о Вас</h4>
-
-                                    <form id="t_form">
-
-                                        <input type="text" id="t_city" placeholder="В какой город доставить?" required>
-
-                                        <input type="text" id="t_name" placeholder="Как к Вам обращаться?" required>
-
-                                        <input type="email" id="t_mail" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
-
-                                        <input type="tel" id="t_phone" maxlength="12" placeholder="Номер телефона" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" required>
-
-                                        <button id="t_sub" class="push_button new-btn">Отправить заявку</button>
-                                        <buttom id="t_canc" class="btn btn-default" data-dismiss="modal">Отмена</buttom>
-
-                                    </form>
-                                </div>
-
-                            </div>
+            <div style="clear:both;"></div>
+            <div class="tech_anket">
+            <form>
+            <div id="tech_anket">
+                <div id="tech_anket_progress">
+                    <svg id="svgAppend" class="progress-loader-circle" width="60" height="60" viewBox="-3 -3 38 38" >
+                        <circle id="progressOuterBackground" cx="16" cy="16" r="16" fill="#333" stroke="none"></circle>
+                        <circle id="progressInnerBackground" cx="16" cy="16" r="13" fill="#333" stroke="none"></circle>
+                        <text   id="progressText" dx="6" dy="19" fill="#FFFFFF" font-size="8"></text>
+                    </svg>
+                </div>
+                <div class="anket-container">
+                    <div class="screen welcomeScr active">
+                        <div class="screen-content">
+                            <h3 class="welcomeScreenHead">Хотите узнать стоимость комплекта бытовой техники для Вашего дома?</h3>
+                            <p class="welcomeScreenText">
+                                Пройди тест из 5 вопросов и получи индивидуальный подбор техники на электронную почту!
+                            </p>
                         </div>
-
+                    </div>
+                    <div class="screen">
+                        <h3>Какую технику Вы выбираете?</h3>
+                        <div class="screen-content">
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="Духовой шкаф" />
+                                </div>
+                                <span>Духовой шкаф</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="СВЧ-печь" />
+                                </div>
+                                <span>СВЧ-печь</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="Варочная поверхность" />
+                                </div>
+                                <span>Варочная поверхность</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="Посудомоечная машина" />
+                                </div>
+                                <span>Посудомоечная машина</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="Вытяжка" />
+                                </div>
+                                <span>Вытяжка</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="Стиральная машина" />
+                                </div>
+                                <span>Стиральная машина</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_type" value="Сушильный автомат" />
+                                </div>
+                                <span>Сушильный автомат</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="screen">
+                        <h3>Какой цвет техники Вас интересует?</h3>
+                        <div class="screen-content">
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_color" value="Черное стекло" />
+                                </div>
+                                <span>Черное стекло</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_color" value="Черное стекло с нержавеющей сталью" />
+                                </div>
+                                <span>Черное стекло с нержавеющей сталью</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_color" value="Белое стекло" />
+                                </div>
+                                <span>Белое стекло</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_color" value="Кремовый" />
+                                </div>
+                                <span>Кремовый</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_color" value="Антрацит" />
+                                </div>
+                                <span>Антрацит</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_color" value="Не имеет значения" />
+                                </div>
+                                <span>Не имеет значения</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="screen">
+                        <h3>Техника каких брендов Вас интересует?</h3>
+                        <div class="screen-content">
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Miele" />
+                                </div>
+                                <span>Miele</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Bosch" />
+                                </div>
+                                <span>Bosch</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Siemens" />
+                                </div>
+                                <span>Siemens</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Neff" />
+                                </div>
+                                <span>Neff</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Leibherr" />
+                                </div>
+                                <span>Leibherr</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Elica" />
+                                </div>
+                                <span>Elica</span>
+                            </label>
+                            <label>
+                                <div style="background-image:url(/css/anketa/img/placeholder.jpg);">
+                                    <input type="radio" name="tech_brand" value="Smeg" />
+                                </div>
+                                <span>Smeg</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="screen">
+                        <h3>Как скоро Вам нужна техника?</h3>
+                        <div class="screen-content">
+                            <label>
+                                <input type="radio" name="tech_delivery" value="Скоро" />
+                                <span>Срочно</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="tech_delivery" value="Через две недели" />
+                                <span>Через две недели</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="tech_delivery" value="Через месяц" />
+                                <span>Через месяц</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="screen">
+                        <h3>Как к вам обращаться?</h3>
+                        <div class="screen-content">
+                            <input type="text" name="fio" value="" placeholder="Ваше имя *" />
+                        </div>
+                    </div>
+                    <div class="screen">
+                        <h3>Введите ваш контактный телефон</h3>
+                        <div class="screen-content">
+                            <input type="text" name="phone" value="" placeholder="Ваш номер телефона *" />
+                            <input type="text" name="email" value="" placeholder="Ваш емейл" />
+                        </div>
+                    </div>
+                    <div class="screen">
+                        <h3>Спасибо, что обратились к нам!</h3>
+                        <p style="text-align:center;; padding-top:20px; font-size:27px;">Наш специалист свяжется с вами в ближайшее время.</p>
                     </div>
                 </div>
+                <div class="buttons">
+                    <center>
+                        <a href="" class="prev not-visible">Назад</a>
+                        <a href="" class="next long">Начать</a>
+                    </center>
+                <div id="error"></div>
+                </div>
             </div>
+            </form>
+            </div>
+            <script>
+                var ajaxtechAnketUrl='/anketa/process.php';
+            </script>
         </div>
     </section>
 

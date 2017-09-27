@@ -217,13 +217,16 @@ button {
 
 /*Пятый блок*/
 .test_block {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: url("../img/imgTest.jpeg") no-repeat center center;
-  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
-  color: white;
-
+  width: 100%;
+  color: #ffffff;
+}
+.test_block .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .modal {
   color: black;

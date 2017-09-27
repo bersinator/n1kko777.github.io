@@ -1,0 +1,378 @@
+.tech_anket {
+    background-image: url(img/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #fff;
+}
+#tech_anket {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 0 100px 0;
+}
+#tech_anket .anket-container {
+    color: #fff;
+    margin: 0 40px 0 40px;
+}
+#tech_anket .anket-container h3 {
+    color: #f4de64;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#tech_anket .anket-container h4 {
+    color: #f4de64;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#tech_anket .anket-container .screen {
+    display: none;
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    max-width: 880px;
+    margin: 0 auto 0 auto;
+}
+#tech_anket .anket-container .screen.active {
+    display: block;
+}
+#tech_anket .buttons {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+}
+#tech_anket .buttons a {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    line-height: 50px;
+    height: 50px;
+    width: 120px;
+    background: #f4de64;
+    border-radius: 5px;
+    border: #f4de64 solid 1px;
+}
+#tech_anket .buttons a:hover {
+    background: #fff;
+}
+#tech_anket .buttons a.prev {
+    margin-right: 50px;
+}
+#tech_anket .buttons a.next.long {
+    width: 220px;
+}
+#tech_anket .buttons a.not-visible {
+    display: none;
+}
+#tech_anket .buttons #error {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: rgba(255, 0, 0, 0.8);
+    text-align: canter;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+#tech_anket label {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 180px;
+    height: 180px;
+}
+#tech_anket .anket-container .screen:nth-child(2) label {
+    width: 180px;
+    background: #fff;
+}
+#tech_anket .anket-container .screen:nth-child(3) label {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+#tech_anket .anket-container .screen:nth-child(3) label div {
+    background-color: #fff;
+}
+#tech_anket .anket-container .screen:nth-child(4) label {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+#tech_anket .anket-container .screen:nth-child(4) label div {
+}
+#tech_anket .anket-container .screen:nth-child(5) label {
+    display: block;
+    margin: 0 auto !important;
+    height: auto;
+}
+#tech_anket .anket-container .screen:nth-child(5) label div {
+}
+#tech_anket label:last-child {
+    margin-right: 0;
+}
+#tech_anket label div {
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#tech_anket label .checker {
+    position: absolute;
+    display: none;
+    color: #222;
+    z-index: 5;
+    width: 28px;
+    height: 28px;
+    right: 20px;
+    top: 20px;
+    background: #f4de64;
+    border-radius: 14px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: center;
+}
+#tech_anket label input {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+#tech_anket label span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+#tech_anket .anket-container .screen:nth-child(5) label {
+    width: 180px;
+    height: auto;
+}
+#tech_anket .anket-container .screen:nth-child(5) label div {
+    height: 180px;
+}
+#tech_anket .anket-container .screen:nth-child(5) label .checker {
+    position: absolute;
+    display: none;
+    color: #222;
+    z-index: 5;
+    width: 28px;
+    height: 28px;
+    right: 20px;
+    top: 20px;
+    background: #f4de64;
+    border-radius: 14px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: center;
+}
+#tech_anket .techEl-size {
+    display: block;
+    width: 400px;
+}
+#tech_anket .techEl-size input {
+    display: inline-block;
+    width: 100px;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border: #000 solid 1px;
+    text-align: center;
+}
+#tech_anket .anket-container .screen:nth-child(7) input {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 24px 0 24px;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px auto 10px auto;
+    border: #000 solid 1px;
+    font-size: 18px;
+}
+#tech_anket .anket-container .screen:nth-child(8) input {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 24px 0 24px;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px auto 10px auto;
+    border: #000 solid 1px;
+    font-size: 18px;
+}
+#tech_anket .anket-container .screen:nth-child(9) input {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 24px 0 24px;
+    height: 50px;
+    line-height: 50px;
+    margin: 50px auto 10px auto;
+    border: #000 solid 1px;
+    font-size: 18px;
+}
+.owl-prev {
+    position: absolute;
+    left: -30px;
+    top: 65px;
+    width: 48px;
+    height: 48px;
+    background: #f4de64;
+    color: #222;
+    border: #f4de64 solid 1px;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+}
+.owl-next {
+    position: absolute;
+    right: -30px;
+    top: 65px;
+    width: 48px;
+    height: 48px;
+    background: #f4de64;
+    color: #222;
+    border: #f4de64 solid 1px;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+}
+.owl-prev:hover,
+.owl-next:hover {
+    background: #fff;
+}
+.owl-prev.disabled,
+.owl-next.disabled {
+    display: none;
+}
+#tech_anket_progress {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    opacity: 0;
+}
+#tech_anket_progress .progress-percent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 60px;
+    z-index: 2;
+}
+#tech_anket .tech_anket_progress {
+    -webkit-animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+#svgAppend path {
+    -webkit-animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+    animation: fadeIn 1s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+.dimensionsAnket {
+    width: 540px;
+}
+.welcomeScreenText {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+.welcomeScreenHead {
+    margin-bottom: 10px;
+    padding-top: 20px
+}
+
+/*** additional responsive css start ***/
+/*** Responsive Styles Large Desktop And Above ***/
+@media all and (min-width: 1750px) {} 
+@media all and (min-width: 1405px) and (max-width: 1750px) {}
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 1100px) and (max-width: 1405px) {}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (min-width: 1100px) and (max-width: 1280px) {}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (min-width: 980px) and (max-width: 1100px) {}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {}
+
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {}
+
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+    #tech_anket .techEl-size input {
+        display: block;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        height: 35px;
+        line-height: 35px;
+        border: #000 solid 1px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .dimensionsAnket {
+        width: 100%;
+    }
+    #tech_anket .techEl-size {
+        width: 100%;
+    }
+    .welcomeScreenHead {
+        font-size: 20px;
+    }
+    .welcomeScreenText {
+        font-size: 15px;
+    }
+    #tech_anket label {
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (min-width: 320px) and (max-width: 479px) {
+    .welcomeScreenHead {
+        font-size: 20px;
+    }
+    .welcomeScreenText {
+        font-size: 15px;
+    }
+    #tech_anket .techEl-size input {
+        display: block;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        height: 35px;
+        line-height: 35px;
+        border: #000 solid 1px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+/*** additional responsive css end ***/
