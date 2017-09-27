@@ -211,35 +211,35 @@ jQuery(document).ready(function($) {
                 progressBar.style.opacity = '1';
 
                 var fstStep = document.createElementNS(svgNS, "path"),
-                    progressTextNode = document.createTextNode('12,5%');
+                    progressTextNode = document.createTextNode('1/6');
 
                 fstStep.setAttributeNS(null, "id", "fstStep");
                 fstStep.setAttributeNS(null, "cx", 16);
                 fstStep.setAttributeNS(null, "cy", 16);
                 fstStep.setAttributeNS(null, "r", 16);
-                fstStep.setAttributeNS(null, "d", "M 16,0 A 16,16 0 0 1 27.313708,4.686291 L 16,16 Z");
+                fstStep.setAttributeNS(null, "d", "M 16,0 A 16,16 0 0 1 29.856406,7.9999996 L 16,16 Z");
                 fstStep.setAttributeNS(null, "fill", "#f4de64");
                 fstStep.setAttributeNS(null, "stroke", "none");
 
                 svgProgressText.appendChild(progressTextNode);
-
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgAppend.insertBefore(fstStep, svgProgressInnerBackground)
             break;
             case 1:
                 var sndStep = document.createElementNS(svgNS, "path"),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('25%');
+                    progressTextNode = document.createTextNode('2/6');
 
                 sndStep.setAttributeNS(null, "id", "sndStep");
                 sndStep.setAttributeNS(null, "cx", 16);
                 sndStep.setAttributeNS(null, "cy", 16);
                 sndStep.setAttributeNS(null, "r", 16);
-                sndStep.setAttributeNS(null, "d", "M 27.313708,4.686291 A 16,16 0 0 1 32,16 l -16,0 z");
+                sndStep.setAttributeNS(null, "d", "M 29.856406,7.9999996 A 16,16 0 0 1 29.856406,24 L 16,16 Z");
                 sndStep.setAttributeNS(null, "fill", "#f4de64");
                 sndStep.setAttributeNS(null, "stroke", "none");
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 svgAppend.insertBefore(sndStep, svgProgressInnerBackground);
@@ -247,18 +247,18 @@ jQuery(document).ready(function($) {
             case 2:
                 var thrdStep = document.createElementNS(svgNS, "path"),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('37,5%');
+                    progressTextNode = document.createTextNode('3/6');
 
                 thrdStep.setAttributeNS(null, "id", "thrdStep");
                 thrdStep.setAttributeNS(null, "cx", 16);
                 thrdStep.setAttributeNS(null, "cy", 16);
                 thrdStep.setAttributeNS(null, "r", 16);
-                thrdStep.setAttributeNS(null, "d", "M 32,16 A 16,16 0 0 1 27.313709,27.313708 L 16,16 Z");
+                thrdStep.setAttributeNS(null, "d", "M 29.856406,24 A 16,16 0 0 1 16,32 l 0,-16 z");
                 thrdStep.setAttributeNS(null, "fill", "#f4de64");
                 thrdStep.setAttributeNS(null, "stroke", "none");
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 6);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 svgAppend.insertBefore(thrdStep, svgProgressInnerBackground);
@@ -266,18 +266,18 @@ jQuery(document).ready(function($) {
             case 3:
                 var fourthStep = document.createElementNS(svgNS, "path"),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('50%');
+                    progressTextNode = document.createTextNode('4/6');
 
                 fourthStep.setAttributeNS(null, "id", "fourthStep");
                 fourthStep.setAttributeNS(null, "cx", 16);
                 fourthStep.setAttributeNS(null, "cy", 16);
                 fourthStep.setAttributeNS(null, "r", 16);
-                fourthStep.setAttributeNS(null, "d", "M 27.313709,27.313708 A 16,16 0 0 1 16,32 l 0,-16 z");
+                fourthStep.setAttributeNS(null, "d", "M 16,32 A 16,16 0 0 1 2.1435934,24 L 16,16 Z");
                 fourthStep.setAttributeNS(null, "fill", "#f4de64");
                 fourthStep.setAttributeNS(null, "stroke", "none");
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 svgAppend.insertBefore(fourthStep, svgProgressInnerBackground);
@@ -285,18 +285,18 @@ jQuery(document).ready(function($) {
             case 4:
                 var fifthStep = document.createElementNS(svgNS, "path"),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('62,5%');
+                    progressTextNode = document.createTextNode('5/6');
 
                 fifthStep.setAttributeNS(null, "id", "fifthStep");
                 fifthStep.setAttributeNS(null, "cx", 16);
                 fifthStep.setAttributeNS(null, "cy", 16);
                 fifthStep.setAttributeNS(null, "r", 16);
-                fifthStep.setAttributeNS(null, "d", "M 16,32 A 16,16 0 0 1 4.6862914,27.313708 L 16,16 Z");
+                fifthStep.setAttributeNS(null, "d", "m 2.1435934,24 a 16,16 0 0 1 -10e-8,-15.9999996 L 16,16 Z");
                 fifthStep.setAttributeNS(null, "fill", "#f4de64");
                 fifthStep.setAttributeNS(null, "stroke", "none");
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 6);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 svgAppend.insertBefore(fifthStep, svgProgressInnerBackground);
@@ -304,64 +304,24 @@ jQuery(document).ready(function($) {
             case 5:
                 var sixthStep = document.createElementNS(svgNS, "path"),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('75%');
+                    progressTextNode = document.createTextNode('6/6');
 
                 sixthStep.setAttributeNS(null, "id", "sixthStep");
                 sixthStep.setAttributeNS(null, "cx", 16);
                 sixthStep.setAttributeNS(null, "cy", 16);
                 sixthStep.setAttributeNS(null, "r", 16);
-                sixthStep.setAttributeNS(null, "d", "M 4.6862914,27.313708 A 16,16 0 0 1 0,15.999999 L 16,16 Z");
+                sixthStep.setAttributeNS(null, "d", "M 2.1435933,8.0000004 A 16,16 0 0 1 16,0 l 0,16 z");
                 sixthStep.setAttributeNS(null, "fill", "#f4de64");
                 sixthStep.setAttributeNS(null, "stroke", "none");
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 svgAppend.insertBefore(sixthStep, svgProgressInnerBackground);
                 break;
             case 6:
-                var seventhStep = document.createElementNS(svgNS, "path"),
-                    textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('87,5%');
-
-                seventhStep.setAttributeNS(null, "id", "seventhStep");
-                seventhStep.setAttributeNS(null, "cx", 16);
-                seventhStep.setAttributeNS(null, "cy", 16);
-                seventhStep.setAttributeNS(null, "r", 16);
-                seventhStep.setAttributeNS(null, "d", "M 0,15.999999 A 16,16 0 0 1 4.6862913,4.6862917 L 16,16 Z");
-                seventhStep.setAttributeNS(null, "fill", "#f4de64");
-                seventhStep.setAttributeNS(null, "stroke", "none");
-
-                svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 6);
-                svgProgressText.appendChild(progressTextNode);
-
-                svgAppend.insertBefore(seventhStep, svgProgressInnerBackground);
-                break;
-            case 7:
-                var eighthStep = document.createElementNS(svgNS, "path"),
-                    textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('100%');
-
-                eighthStep.setAttributeNS(null, "id", "eighthStep");
-                eighthStep.setAttributeNS(null, "cx", 16);
-                eighthStep.setAttributeNS(null, "cy", 16);
-                eighthStep.setAttributeNS(null, "r", 16);
-                eighthStep.setAttributeNS(null, "d", "M 4.6862913,4.6862917 A 16,16 0 0 1 16,0 l 0,16 z");
-                eighthStep.setAttributeNS(null, "fill", "#f4de64");
-                eighthStep.setAttributeNS(null, "stroke", "none");
-
-                svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 7);
-                svgProgressText.appendChild(progressTextNode);
-
-                svgAppend.insertBefore(eighthStep, svgProgressInnerBackground);
-                break;
-            case 8:
                 progressBar.style.opacity = '0';
-
-
                 break;
         }
     }
@@ -382,7 +342,7 @@ jQuery(document).ready(function($) {
                     fstStepEl.parentNode.removeChild(fstStepEl)
                 }, 500);
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 6);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
                 setTimeout(function() {
                     progressBar.style.opacity = '0'
@@ -398,7 +358,7 @@ jQuery(document).ready(function($) {
                     fstStepEl.parentNode.removeChild(fstStepEl)
                 }, 500);
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 6);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
                 setTimeout(function() {
                     progressBar.style.opacity = '0'
@@ -410,7 +370,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('12,5%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 6);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(sndStepEl, 500);
@@ -424,7 +384,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('25%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(thrdStepEl, 500);
@@ -438,7 +398,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('37,5%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(fourthStepEl, 500);
@@ -452,7 +412,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('50%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(fifthStepEl, 500);
@@ -466,7 +426,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('62,5%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(sixthStepEl, 500);
@@ -480,7 +440,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('75%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(seventhStepEl, 500);
@@ -494,7 +454,7 @@ jQuery(document).ready(function($) {
                     progressTextNode = document.createTextNode('87,5%');
 
                 svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 9);
+                svgProgressText.setAttributeNS(null, "dx", 10);
                 svgProgressText.appendChild(progressTextNode);
 
                 fadeOut(eighthStepEl, 500);
