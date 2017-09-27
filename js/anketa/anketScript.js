@@ -367,7 +367,7 @@ jQuery(document).ready(function($) {
             case 2:
                 var sndStepEl = document.getElementById('sndStep'),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('12,5%');
+                    progressTextNode = document.createTextNode('1/6');
 
                 svgProgressText.removeChild(textOldNode);
                 svgProgressText.setAttributeNS(null, "dx", 10);
@@ -381,7 +381,7 @@ jQuery(document).ready(function($) {
             case 3:
                 var thrdStepEl = document.getElementById('thrdStep'),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('25%');
+                    progressTextNode = document.createTextNode('2/6');
 
                 svgProgressText.removeChild(textOldNode);
                 svgProgressText.setAttributeNS(null, "dx", 10);
@@ -395,7 +395,7 @@ jQuery(document).ready(function($) {
             case 4:
                 var fourthStepEl = document.getElementById('fourthStep'),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('37,5%');
+                    progressTextNode = document.createTextNode('3/6');
 
                 svgProgressText.removeChild(textOldNode);
                 svgProgressText.setAttributeNS(null, "dx", 10);
@@ -409,7 +409,7 @@ jQuery(document).ready(function($) {
             case 5:
                 var fifthStepEl = document.getElementById('fifthStep'),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('50%');
+                    progressTextNode = document.createTextNode('4/6');
 
                 svgProgressText.removeChild(textOldNode);
                 svgProgressText.setAttributeNS(null, "dx", 10);
@@ -423,7 +423,7 @@ jQuery(document).ready(function($) {
             case 6:
                 var sixthStepEl = document.getElementById('sixthStep'),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('62,5%');
+                    progressTextNode = document.createTextNode('5/6');
 
                 svgProgressText.removeChild(textOldNode);
                 svgProgressText.setAttributeNS(null, "dx", 10);
@@ -437,7 +437,7 @@ jQuery(document).ready(function($) {
             case 7:
                 var seventhStepEl = document.getElementById('seventhStep'),
                     textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('75%');
+                    progressTextNode = document.createTextNode('6/6');
 
                 svgProgressText.removeChild(textOldNode);
                 svgProgressText.setAttributeNS(null, "dx", 10);
@@ -446,20 +446,6 @@ jQuery(document).ready(function($) {
                 fadeOut(seventhStepEl, 500);
                 setTimeout(function() {
                     seventhStepEl.parentNode.removeChild(seventhStepEl)
-                }, 500);
-                break;
-            case 8:
-                var eighthStepEl = document.getElementById('eighthStep'),
-                    textOldNode = svgProgressText.childNodes[0],
-                    progressTextNode = document.createTextNode('87,5%');
-
-                svgProgressText.removeChild(textOldNode);
-                svgProgressText.setAttributeNS(null, "dx", 10);
-                svgProgressText.appendChild(progressTextNode);
-
-                fadeOut(eighthStepEl, 500);
-                setTimeout(function() {
-                    eighthStepEl.parentNode.removeChild(eighthStepEl)
                 }, 500);
                 break;
         }
