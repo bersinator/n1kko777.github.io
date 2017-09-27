@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300&amp;subset=cyrillic" rel="stylesheet">
 
     <!--Мои стили-->
     <link href="css/style.css" rel="stylesheet">
@@ -28,13 +29,13 @@
         <div class="container">
 
             <div class="callInfo">
-                <img src="img/logo.png">
+                <img class="logo" src="img/logo.png">
                 <p>Для связи с консультантом<br>
                     <span>8 (3452) 57-91-50</span></p>
             </div>
 
             <div id="inviteBox" class="inviteText">
-                <p>Запишитесь на демонстрацию и<br> индивидуальный подбор техники<br> в нашем шоу-руме</p>
+                <span>Запишитесь на демонстрацию и индивидуальный подбор техники в нашем шоу-руме</span>
                 <br>
 
                 <form id="inv_form">
@@ -42,7 +43,7 @@
                     <input type="text" id="inv_name" placeholder="Как к вам обращаться?" required>
                     <input type="tel" id="inv_phone" class="phone" placeholder="Ваш номер телефона" required>
 
-                    <button id="sub_inv" class="btn join">Записаться</button>
+                    <button id="sub_inv" class="push_button new-btn">Записаться</button>
                 </form>
             </div>
 
@@ -54,9 +55,9 @@
         <div class="container">
             <h4>Немного о нас</h4>
             <h2>Комфорт и статус в Вашем доме</h2>
-            <p class="center">Салон Premium открылся в 2006 году, как специализированный магазин по продаже бытовой техники <br>премиум-класса.</p>
+            <p class="center history">Салон Premium открылся в 2006 году, как специализированный магазин по продаже бытовой техники премиум-класса.</p>
 
-            <p class="center">Сегодня Premium – это салон в Тюмени с самым большим выбором бытовой техники таких<br> производителей, как Bosch, Miele, Smeg и Liebherr и других</p>
+            <p class="center history">Сегодня Premium – это салон в Тюмени с самым большим выбором бытовой техники таких производителей, как Bosch, Miele, Smeg и Liebherr и других.</p>
 
             <div class="row main_info">
                 <div class="col-xs-12 col-md-4">
@@ -149,7 +150,7 @@
                                     </p>
                                 </div>
                                 <form action="#inviteBox">
-                                    <button id="bt_miele" class="btn join" type="submit">Записаться на презентацию
+                                    <button id="bt_miele" class="push_button new-btn" type="submit">Записаться на презентацию
                      техники Miele<br> в салоне PREMIUM</button>
                                 </form>
 
@@ -172,7 +173,7 @@
                                     </p>
                                 </div>
                                 <form action="#inviteBox">
-                                    <button id="bt_bosch" class="btn join" type="submit">Записаться на презентацию
+                                    <button id="bt_bosch" class="push_button new-btn" type="submit">Записаться на презентацию
                    техники Bosch<br> в салоне PREMIUM</button>
                                 </form>
 
@@ -195,7 +196,7 @@
                                     </p>
                                 </div>
                                 <form action="#inviteBox" class="text-center">
-                                    <button id="bt_neff" class="btn join" type="submit">Записаться на презентацию
+                                    <button id="bt_neff" class="push_button new-btn" type="submit">Записаться на презентацию
                    техники Neff<br> в салоне PREMIUM</button>
                                 </form>
 
@@ -218,7 +219,7 @@
                                     </p>
                                 </div>
                                 <form action="#inviteBox" class="text-center">
-                                    <button id="bt_elica" class="btn join" type="submit">Записаться на презентацию
+                                    <button id="bt_elica" class="push_button new-btn" type="submit">Записаться на презентацию
                    техники Elica<br> в салоне PREMIUM</button>
                                 </form>
 
@@ -241,7 +242,7 @@
                                     </p>
                                 </div>
                                 <form action="#inviteBox" class="text-center">
-                                    <button id="bt_libh" class="btn join" type="submit">Записаться на презентацию
+                                    <button id="bt_libh" class="push_button new-btn" type="submit">Записаться на презентацию
                    техники Liebherr<br> в салоне PREMIUM</button>
                                 </form>
 
@@ -264,7 +265,7 @@
                                     </p>
                                 </div>
                                 <form action="#inviteBox" class="text-center">
-                                    <button id="bt_smeg" class="btn join" type="submit">Записаться на презентацию
+                                    <button id="bt_smeg" class="push_button new-btn" type="submit">Записаться на презентацию
                      техники Smeg<br> в салоне PREMIUM</button>
                                 </form>
 
@@ -345,7 +346,7 @@
             </h2>
             <p>Пройди тест из 5 вопросов и получи индивидуальный<br> подбор техники на электронную почту!</p>
 
-            <button id="entry_test" class="btn join" type="button" data-toggle="modal" data-target="#myTest">
+            <button id="entry_test" class="push_button new-btn" type="button" data-toggle="modal" data-target="#myTest">
                Пройти тест
              </button>
 
@@ -434,7 +435,7 @@
 
                                         <input type="tel" id="t_phone" maxlength="12" placeholder="Номер телефона" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер" required>
 
-                                        <button id="t_sub" class="btn join">Отправить заявку</button>
+                                        <button id="t_sub" class="push_button new-btn">Отправить заявку</button>
                                         <buttom id="t_canc" class="btn btn-default" data-dismiss="modal">Отмена</buttom>
 
                                     </form>
@@ -507,7 +508,7 @@
             </div>
 
 
-            <button id="ask_quest" class="btn join" type="button" data-toggle="modal" data-target="#myQuest">Задать свой вопрос</button>
+            <button id="ask_quest" class="push_button new-btn" type="button" data-toggle="modal" data-target="#myQuest">Задать свой вопрос</button>
 
             <div class="modal fade" id="myQuest" tabindex="-1" role="dialog" aria-labelledby="mymodallabel">
                 <div class="modal-dialog modal-sm" role="document">
@@ -522,7 +523,7 @@
                             <buttom class="btn btn-default" data-dismiss="modal">
                                 Отмена
                             </buttom>
-                            <button id="q_sub" class="btn join">Отправить заявку</button>
+                            <button id="q_sub" class="push_button new-btn">Отправить заявку</button>
                         </form>
 
                     </div>
@@ -607,7 +608,7 @@
                          <br>
                </span>
                 <br>
-                <button id="bt_map" class="btn join" data-toggle="modal" data-target="#getCall">Получить консультацию</button>
+                <button id="bt_map" class="push_button new-btn" data-toggle="modal" data-target="#getCall">Получить консультацию</button>
 
                 <div class="modal fade" id="getCall" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
@@ -622,7 +623,7 @@
                                 <buttom class="btn btn-default" data-dismiss="modal">
                                     Отмена
                                 </buttom>
-                                <button id="g_sub" class="btn join">Отправить заявку</button>
+                                <button id="g_sub" class="push_button new-btn">Отправить заявку</button>
                             </form>
                         </div>
                     </div>
@@ -634,8 +635,8 @@
     <!-- Девятый блок -->
     <section class="footer">
         <div class="container">
-            <span>© 2017. ООО Премиум. </span><br>
-            <a href="#rules" data-toggle="modal">Заполняя любую форму на сайте, Вы соглашаетесь с политикой конфиденциальности.</a>
+            <span>© 2017, ООО Премиум. </span><br>
+            Заполняя любую форму на сайте, Вы соглашаетесь с <a href="#rules" data-toggle="modal">политикой конфиденциальности.</a>
         </div>
 
         <div class="modal fade" id="rules" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -669,7 +670,7 @@
                     <h3>Соблюдение вашей конфиденциальности на уровне компании</h3>
                     <p>Для того чтобы убедиться, что ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников, и строго следим за исполнением мер соблюдения конфиденциальности.</p>
 
-                    <buttom id="close" class="btn join" data-dismiss="modal">
+                    <buttom id="close" class="push_button new-btn" data-dismiss="modal">
                         Закрыть
                     </buttom>
                 </div>
