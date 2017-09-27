@@ -12,13 +12,12 @@ $renderer   = array(
 				'email'         => 'Электронная почта',
 			);
 $result=array();
+
 if(isset($_POST['screen']) && intval($_POST['screen']))
 	{
 	switch($_POST['screen'])
 		{
 		case 7:
-
-
 			unset($_POST['screen']);
 
 			$body='Добрый день!<br />';
@@ -32,10 +31,16 @@ if(isset($_POST['screen']) && intval($_POST['screen']))
 
 			$headers = 'From: osxmagic <info@osxmagic.com>' . "\r\n";
 
-			mail($adminEmail, $subject, $body, $headers);
+			if(mail($adminEmail, $subject, $body, $headers)) {
+				$result = 1;
+			} else {
+				$result = 0;
+			}
+
 		break;
 		}
 	}
+	
 header("Content-Type: application/json;");
 echo json_encode($result);
 ?>
