@@ -20,12 +20,17 @@ if(isset($_POST['screen']) && intval($_POST['screen']))
 		{
 		case 7:
 			unset($_POST['screen']);
-
 			$body='Добрый день!<br />';
 			$body.='Cообщаем вам, что на сайте <strong>'.$siteName.'</strong> пользователь заполнил анкету и оставил следующие данные:<br /><br />';
 
 			foreach($_POST as $k => $v) {
+
+					if (is_array($v)) {
+						$v = implode(", ", $v);
+					}
+
 					$body.='<b>'.$renderer[$k].'</b>: '.$v.'<br />';
+
 				}
 
 			$body.='<br /><br />';

@@ -199,7 +199,12 @@ jQuery(document).ready(function($) {
                     checkboxElParent.children('.checker').fadeIn(300);
                 }        
             } else {
-                alert('Можно выбрать только 3 элемента!')
+                if (checkboxElCheker.length > 0) {
+                    checkboxElCheker.hide();
+                    checkboxElParent.children('.checker').remove();
+                } else {
+                    alert('Можно выбрать только 3 элемента!');
+                }
             }
 
     });
@@ -462,13 +467,13 @@ jQuery(document).ready(function($) {
     function AnketScreenValid(screen) {
         switch (screen) {
             case 1:
-                if (!$('#tech_anket .anket-container .screen').eq(1).find('.screen-content').find('input[type=radio]:checked').length) return false;
+                if (!$('#tech_anket .anket-container .screen').eq(1).find('.screen-content').find('input[type=checkbox]:checked').length) return false;
                 break;
             case 2:
-                if (!$('#tech_anket .anket-container .screen').eq(2).find('.screen-content').find('input[type=radio]:checked').length) return false;
+                if (!$('#tech_anket .anket-container .screen').eq(2).find('.screen-content').find('input[type=checkbox]:checked').length) return false;
                 break;
             case 3:
-                if (!$('#tech_anket .anket-container .screen').eq(3).find('.screen-content').find('input[type=radio]:checked').length) return false;
+                if (!$('#tech_anket .anket-container .screen').eq(3).find('.screen-content').find('input[type=checkbox]:checked').length) return false;
                 break;
             case 4:
                 if (!$('#tech_anket .anket-container .screen').eq(4).find('.screen-content').find('input[type=radio]:checked').length) return false;
