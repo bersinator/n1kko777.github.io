@@ -93,7 +93,6 @@
 }
 #tech_anket .anket-container .screen:nth-child(2) label {
     width: 180px;
-    background: #fff;
 }
 #tech_anket .anket-container .screen:nth-child(3) label {
     display: block;
