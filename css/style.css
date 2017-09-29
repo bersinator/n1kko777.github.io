@@ -102,7 +102,7 @@ button {
     width: 305px;
 }
 
-.inviteText input {
+.inviteText input, .screen-content input[type='text'] {
     padding-top: 7px;
     padding-bottom: 7px;
     background: transparent;
@@ -114,6 +114,11 @@ button {
     border-bottom: 1px solid;
     margin-bottom: 30px;
     border-color: #aaa;    
+}
+
+input:focus, input:active, form:focus, form:active, button:focus, button:active, a:focus, a:active {
+    outline: none;
+    outline-offset: 0;
 }
 
 #inv_form {

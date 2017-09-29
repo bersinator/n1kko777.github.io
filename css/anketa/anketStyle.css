@@ -168,22 +168,27 @@
     font-size: 22px;
     padding-bottom: 20px;
 }
-#tech_anket .anket-container .screen:nth-child(5) label .checker {
+#tech_anket .anket-container .screen:nth-child(5) label .checker, .non-checked {
     position: absolute;
     display: none;
     color: #222;
     z-index: 5;
     width: 28px;
     height: 28px;
-    right: 0px;
+    left: 0px;    
     top: 0px;
-    background: #f4de64;
     border-radius: 14px;
     font-size: 30px;
     font-weight: bold;
     line-height: 16px;
     text-align: center;
 }
+
+#tech_anket .anket-container .screen:nth-child(5) label .checker {
+    background: #f4de64;
+    z-index: 15;    
+}
+
 #tech_anket .techEl-size {
     display: block;
     width: 400px;
@@ -206,7 +211,6 @@
     height: 50px;
     line-height: 50px;
     margin: 50px auto 10px auto;
-    border: #000 solid 1px;
     font-size: 18px;
 }
 #tech_anket .anket-container .screen:nth-child(8) input {
