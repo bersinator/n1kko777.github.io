@@ -184,15 +184,23 @@ jQuery(document).ready(function($) {
     });
 
     $(document).on('click', '#tech_anket label input[type=checkbox]', function() {
-        var checkboxEl = $(this).closest('.screen').find('label'),
-            checkboxState = $(this);
-
-            alert(checkboxState);
-
-            $(this).closest('.screen').find('label').find('.checker').remove();
-        
-        $(this).closest('label').prepend('<div class="checker"><svg viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle id="bg" fill="#f4de64" cx="20" cy="20" r="20"></circle><path id="arrow" fill="#000" d="M13.707 20.293l-1.414 1.414L17 26.414l10.707-10.707-1.414-1.414L17 23.586z"></path></g></svg></div>');
-        $(this).closest('label').find('.checker').fadeIn(300);
+        var checkboxElParent = $(this).parents('label'),
+            checkboxElStage  = $(this).parents('.owl-stage'),
+            checkboxElCheker = checkboxElParent.children('.checker'),
+            checkboxState    = $(this),
+            counter          = checkboxElStage.find('.checker').length;
+            
+            if (counter < 3) {
+                if (checkboxElCheker.length > 0) {
+                    checkboxElCheker.hide();
+                    checkboxElParent.children('.checker').remove();
+                } else {
+                    checkboxElParent.prepend('<div class="checker"><svg viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle id="bg" fill="#f4de64" cx="20" cy="20" r="20"></circle><path id="arrow" fill="#000" d="M13.707 20.293l-1.414 1.414L17 26.414l10.707-10.707-1.414-1.414L17 23.586z"></path></g></svg></div>');
+                    checkboxElParent.children('.checker').fadeIn(300);
+                }        
+            } else {
+                alert('Можно выбрать только 3 элемента!')
+            }
 
     });
 
