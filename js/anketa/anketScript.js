@@ -203,6 +203,7 @@ jQuery(document).ready(function($) {
                     checkboxElCheker.hide();
                     checkboxElParent.children('.checker').remove();
                 } else {
+                    $(this).prop('checked', false);
                     alert('Можно выбрать только 3 элемента!');
                 }
             }

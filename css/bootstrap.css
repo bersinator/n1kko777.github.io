@@ -5905,6 +5905,7 @@ button.close {
 }
 .modal-content {
   position: relative;
+  padding: 30px;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
@@ -6383,21 +6384,16 @@ button.close {
 }
 .carousel-indicators li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #202020;
+  background-color: #aaa; 
   border-radius: 10px;
 }
 .carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin: 0;
-  background-color: #ffff00;
+  background-color: #ffde00;
 }
 .carousel-caption {
   position: absolute;
