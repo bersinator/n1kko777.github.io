@@ -21,7 +21,10 @@
     display: block;
     margin-bottom: 20px;
     text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab';
 }
+
 #tech_anket .anket-container h4 {
     color: #f4de64;
     display: block;
