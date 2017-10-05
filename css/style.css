@@ -73,7 +73,21 @@ button {
   padding-bottom: 120px;
 }
 
-.callInfo p {
+.callInfo .logo-wrapper {
+    float: left;
+}
+
+.callInfo .logo {
+    display: block;
+}
+
+.callInfo .descriptor {
+    font-size: 18px;
+    color: #ffdf00;
+    display: block;
+}
+
+.contacts-wrapper {
     text-align: center;
     float: right;
     width: 250px;
@@ -85,7 +99,6 @@ button {
 }
 
 .callInfo .logo {
-  float: left;
   width: 250px;
   padding: 5px;
 }
@@ -149,7 +162,6 @@ input:-webkit-autofill {
 /*Второй Блок*/
 .about_us {
   margin-top: 100px;
-  padding-bottom: 50px;
 }
 
 .main_info {
@@ -409,7 +421,7 @@ input:-webkit-autofill {
   /*background: Фотография из салона,
    на которой изображен руководитель
    компании*/
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
