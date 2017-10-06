@@ -3028,8 +3028,8 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  /*outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; */
 }
 .btn:hover,
 .btn:focus,
@@ -5905,7 +5905,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  padding: 30px;
+  padding: 60px;
   background-color: #fff;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
