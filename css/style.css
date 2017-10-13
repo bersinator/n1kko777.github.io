@@ -521,6 +521,25 @@ h4.our_team_h {
   padding-left: 50px;
 }
 
+.our_team .speech-text:before, .our_team .speech-text:after {
+  content: "";
+  height: 34px;
+  position: absolute;
+  width: 40px;
+}
+
+.our_team .speech-text:before {
+  background: url(../img/Teams/quote1.png) no-repeat;
+  left: 10px;
+  top: -40px;
+}
+
+.our_team .speech-text:after {
+  background: url(../img/Teams/quote2.png) no-repeat;
+  right: 10px;
+  bottom: 80px;
+}
+
 .our_team .speech p {
     font-size: 24px;
 }
@@ -663,6 +682,11 @@ footer a:hover {
     .teams img {
       max-width: 100%;
     }
+    
+    .our_team .speech-text:before, .our_team .speech-text:after {
+      width: 24px;
+      height: 20.4px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -764,6 +788,10 @@ footer a:hover {
     
     .our_team .speech {
         margin-top: 0;
+    }
+    
+     .our_team .speech-text:before, .our_team .speech-text:after {
+       display: none;
     }
     
     .test_block p {

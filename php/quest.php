@@ -1,6 +1,6 @@
 <?php
 
-$resepient = "3734489@gmail.com";
+$resepient = "miele.premium72@mail.ru";
 $sitename = "Premium-Tyumen";
 
 $q_name = $_POST["q_name"];

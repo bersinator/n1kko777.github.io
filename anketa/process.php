@@ -1,7 +1,7 @@
 <?php
-$adminEmail = 'm.kukarin@mail.ru';
-$siteName   = "Premium-Tyumen";
-$subject    = 'Новый заказ на сайте '.$siteName;
+$adminEmail = 'miele.premium72@mail.ru';
+$siteName   = "Премиум-бытовая-техника.рф";
+$subject    = 'Анкета с сайта '.$siteName;
 $renderer   = array(
 				'tech_type'     => 'Тип техники',
 				'tech_color'    => 'Цвет техники',
@@ -21,7 +21,7 @@ if(isset($_POST['screen']) && intval($_POST['screen']))
 		case 7:
 			unset($_POST['screen']);
 			$body='Добрый день!<br />';
-			$body.='Cообщаем вам, что на сайте <strong>'.$siteName.'</strong> пользователь заполнил анкету и оставил следующие данные:<br /><br />';
+			$body.='На сайте <strong>'.$siteName.'</strong> пользователь заполнил анкету и оставил следующие данные:<br /><br />';
 
 			foreach($_POST as $k => $v) {
 
@@ -35,9 +35,8 @@ if(isset($_POST['screen']) && intval($_POST['screen']))
 
 			$body.='<br /><br />';
 
-			$headers = "From:  osxmagic <info@osxmagic.com> \r\n";
+			$headers = "From:  Premium <info@pointb.su> \r\n";
 			$headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
-			$headers .= "CC:' . $adminEmail . '\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-Type: text/html;\r\n";
 

@@ -1,7 +1,7 @@
 <?php
 
-$resepient = "3734489@gmail.com";
-$sitename = "Premium-Tyumen";
+$resepient = "miele.premium72@mail.ru";
+$sitename = "Премиум-бытовая-техника.рф";
 
 $name = $_POST["name"];
 $phone = $_POST["phone"];
@@ -33,7 +33,7 @@ if(!empty($phone) && !empty($name)) {
     echo "Заполните пустые поля";
 }
 $message = "Необходимо связаться с Клиентом: \nИмя: $name \nТелефон: $phone";
-$pagetitle = "Новая заявка с сайта \"$sitename\"";
+$pagetitle = "Новая заявка с сайта на демонстрацию техники \"$sitename\"";
 mail($resepient, $pagetitle, $message);
 
 ?>

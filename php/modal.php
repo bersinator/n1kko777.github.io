@@ -1,7 +1,7 @@
 <?php
 
-$resepient = "3734489@gmail.com";
-$sitename = "Premium-Tyumen";
+$resepient = "miele.premium72@mail.ru";
+$sitename = "Премиум-бытовая-техника.рф";
 
 $g_name = $_POST["g_name"];
 $g_phone = $_POST["g_phone"];

@@ -190,7 +190,7 @@ jQuery(document).ready(function($) {
             checkboxState    = $(this),
             counter          = checkboxElStage.find('.checker').length;
             
-            if (counter < 3) {
+            if (counter < 10) {
                 if (checkboxElCheker.length > 0) {
                     checkboxElCheker.hide();
                     checkboxElParent.children('.checker').remove();
