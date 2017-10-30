@@ -330,11 +330,11 @@ input:-webkit-autofill {
 }
 
 .carousel-control.left {
-    left: -12%;
+    left: -5%;
 }
 
 .carousel-control.right {
-    right: -12%;
+    right: 0;
 }
 
 /*Четвертый блок*/
@@ -663,7 +663,7 @@ footer a:hover {
     }
 
     .carousel-control.right {
-        right: -200px;
+        right: 0;
     }
 }
 
